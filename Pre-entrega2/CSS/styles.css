@@ -11,6 +11,8 @@
 body    {
     font-family: "Poppins", sans-serif;
     background-color:#E0E0E0;
+    color:#0C5F97;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Header inicio */
@@ -18,14 +20,15 @@ body    {
 /* Header inicio */
 /* Header inicio */
 
-img {
-    max-width: 100%;
-}
-
+/* navbar inicio*/
 .logo   {
     color:#0C5F97;
     font-size: 25px;
     font-weight: 800;
+}
+
+.logo:hover   {
+    color:black;
 }
 
 .nav-link{
@@ -36,25 +39,27 @@ img {
 }
 
 .nav-link:hover {
-    font-weight: bold;
-    text-decoration: underline 3px;
+    color: black;
 }
+/* nabvar fin */
 
+/* contenido header inicio*/
 .header-content {
     display: flex;
-    padding: 10px 10px 0px 70px;
-    height: 525px;
-    background-image: url(../assets/img/header2.png);
+    padding: 0px 10px 0px 70px;
+    height: 550px;
+    background-image: url(../assets/img/header2.jpg);
     background-size: cover;
-    background-position: center;
-    justify-content: flex-start;
-    align-items: center;
+    background-position: 0px -100px;
+    align-items:center;
 }
 
 .header-txt    {
     flex-direction: column;
-    flex-basis: 45%;
+    flex-basis: 49%;
     padding-right: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
 }
 
 .header-txt h1{
@@ -70,19 +75,83 @@ img {
     height: auto;
     font-size: 30px;
     font-family: "Poppins", sans-serif;
-    background-color: #E0E0E0;
+    color: #0C5F97;
+    background: #E0E0E0 radial-gradient(circle, transparent 1%, #eeeeee 1%) center/15000%;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 600;
+    box-shadow: .5rem .5rem 1rem #0C5F97;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 1s ease;
 }
 
+.efecto {
+    background-position: center;
+}
+
+.efecto:hover   {
+    box-shadow:-.5rem -.5rem 1rem #0C5F97;
+}
+
+.efecto:active  {
+    background-color: #1290e4;
+    background-size: 100%;
+    transition: background 0s;
+}
+/* contenido header inicio*/
+
 /* Header fin */
 /* Header fin */
 /* Header fin */
 /* Header fin */
 
+/* que puedes obtener de nosotros INICIO */
+/* que puedes obtener de nosotros INICIO */
+/* que puedes obtener de nosotros INICIO */
+.general_titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
 
-/* Formulario de contacto inicio */
+.general    {
+    display: flex;
+    justify-content: space-between;
+}
+
+.general_card   {
+    padding: 20px;
+    text-align: center;
+}
+
+.general_card_texto {
+    margin-top: 20px;
+}
+
+.general_img1    {
+    background-image: url(../assets/img/blog1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.general_img2    {
+    background-image: url(../assets/img/blog2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.general_img3    {
+    background-image: url(../assets/img/blog3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* que puedes obtener de nosotros FIN */
+/* que puedes obtener de nosotros FIN */
+/* que puedes obtener de nosotros FIN */
+
 /* Formulario de contacto inicio */
 /* Formulario de contacto inicio */
 /* Formulario de contacto inicio */
