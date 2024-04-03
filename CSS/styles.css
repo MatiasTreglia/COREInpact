@@ -10,73 +10,59 @@
 
 body    {
     font-family: "Poppins", sans-serif;
+    color:#0C5F97;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     background-color:#E0E0E0;
 }
 
+/* --------------------------------------------------------------------------------------- */
 
-img {
-    max-width: 100%;
-}
 
-.menu   {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-}
+/* Header inicio */
+/* Header inicio */
+/* Header inicio */
+/* Header inicio */
 
+/* navbar inicio*/
 .logo   {
     color:#0C5F97;
     font-size: 25px;
     font-weight: 800;
 }
 
-.logo span  {
-    color: black;
+.logo:hover   {
+    color:black;
 }
 
-.menu .navbar ul   {
-    display: flex;
-}
-
-.menu .navbar ul li a{
+.nav-link{
     font-size: 18px;
     padding: 0 20px;
     color: #0C5F97;
-    display: inline-block;
     font-weight: 600;
 }
 
-.menu .navbar ul li a:hover {
-    font-weight: bold;
-    text-decoration: underline 3px;
+.nav-link:hover {
+    color: black;
 }
+/* nabvar fin */
 
-#menu   {
-    display: none;
-}
-
-.menu label {
-    width: 25px;
-    cursor: pointer;
-    display: none;
-}
-
+/* contenido header inicio*/
 .header-content {
     display: flex;
-    padding: 10px 10px 0px 70px;
-    height: 525px;
-    background-image: url(../assets/img/header2.png);
+    padding: 0px 10px 0px 70px;
+    height: 550px;
+    background-image: url(../assets/img/header2.jpg);
     background-size: cover;
-    background-position: center;
-    justify-content: flex-start;
-    align-items: center;
+    background-position: 0px -100px;
+    align-items:center;
 }
 
 .header-txt    {
     flex-direction: column;
-    flex-basis: 45%;
+    flex-basis: 49%;
     padding-right: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
 }
 
 .header-txt h1{
@@ -92,12 +78,178 @@ img {
     height: auto;
     font-size: 30px;
     font-family: "Poppins", sans-serif;
-    background-color: #E0E0E0;
+    color: #0C5F97;
+    background: #E0E0E0 radial-gradient(circle, transparent 1%, #eeeeee 1%) center/15000%;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 600;
+    box-shadow: .5rem .5rem 1rem #0C5F97;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 1s ease;
 }
 
+.efecto {
+    background-position: center;
+}
+
+.efecto:hover   {
+    box-shadow:-.5rem -.5rem 1rem #0C5F97;
+}
+
+.efecto:active  {
+    background-color: #1290e4;
+    background-size: 100%;
+    transition: background 0s;
+}
+/* contenido header Fin*/
+
+/* Header fin */
+/* Header fin */
+/* Header fin */
+/* Header fin */
+
+/* --------------------------------------------------------------------------------------- */
+
+
+/* que puedes obtener de nosotros INICIO */
+/* que puedes obtener de nosotros INICIO */
+/* que puedes obtener de nosotros INICIO */
+.general_titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.general    {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #2b2b2b;
+}
+
+.general_card   {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.general_card_titulo{
+    font-weight: 700;
+}
+
+.general_card_texto {
+    margin-top: 20px;
+    background-color: rgba(224, 224, 224, 0.6);
+}
+
+.general_img1    {
+    background-image: url(../assets/img/blog1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.general_img2    {
+    background-image: url(../assets/img/blog2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.general_img3    {
+    background-image: url(../assets/img/blog3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* que puedes obtener de nosotros FIN */
+/* que puedes obtener de nosotros FIN */
+/* que puedes obtener de nosotros FIN */
+
+/* --------------------------------------------------------------------------------------- */
+
+
+/* Programas descatados carousel inicio */
+/* Programas descatados carousel inicio */
+/* Programas descatados carousel inicio */
+
+.c-altura{
+    height: 600px;
+    background-color: #0C5F97;
+}
+
+.programa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programa_card{
+    padding: 30px;
+}
+
+.programa_card_titulo{
+    font-size: 40px;
+    font-weight: 700;
+    color: #E0E0E0;
+}
+
+.programa_card_imagen{
+    width: 250px;
+    background-position: center;
+    background-position: cover;
+}
+
+.programa_titulo{
+    font-size: 40px;
+    font-weight: 700;
+    color: #E0E0E0;
+}
+
+.programa_destacado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+/* Programas descatados carousel fin */
+/* Programas descatados carousel fin */
+/* Programas descatados carousel fin */
+
+/* --------------------------------------------------------------------------------------- */
+/* Que podemos ofrecerte inicio */
+/* Que podemos ofrecerte inicio */
+/* Que podemos ofrecerte inicio */
+
+.info_content{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.info_titulo{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Que podemos ofrecerte Fin */
+/* Que podemos ofrecerte Fin */
+/* Que podemos ofrecerte Fin */
+
+/* ----------------------------------------------------------------------- */
+
+/* Formulario de contacto inicio */
+/* Formulario de contacto inicio */
+/* Formulario de contacto inicio */
 .contacto {
     justify-content: center;
     align-items: center;
@@ -231,19 +383,7 @@ form button:hover,.links a:hover {
     background: #0C5F97;
 }
 
-/* @media screen and (max-width:600px) {
-    .container {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        gap:20px;
-    }
-
-    .box-info {
-        gap:15px;
-    }
-
-    .box-info > h1 {
-        font-size: 1.5rem;
-    }
-} */
+/* formulario de contacto fin */
+/* formulario de contacto fin */
+/* formulario de contacto fin */
+/* formulario de contacto fin */
