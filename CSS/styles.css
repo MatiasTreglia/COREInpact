@@ -24,6 +24,10 @@ body    {
 /* Header inicio */
 
 /* navbar inicio*/
+.bg-propio      {
+    background-color: transparent;
+}
+
 .logo   {
     color:#0C5F97;
     font-size: 25px;
@@ -47,42 +51,34 @@ body    {
 /* nabvar fin */
 
 /* contenido header inicio*/
-.header-content {
-    display: flex;
-    padding: 0px 10px 0px 70px;
-    height: 550px;
+.header-propio {
+    height: 720px;
     background-image: url(../assets/img/header2.jpg);
     background-size: cover;
-    background-position: 0px -100px;
-    align-items:center;
+    font-size: 30px;
 }
 
 .header-txt    {
-    flex-direction: column;
-    flex-basis: 49%;
-    padding-right: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     font-weight: 700;
 }
 
 .header-txt h1{
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 60px;
 }
 
-.header-txt h2 {
-    margin-left: 50px;
-}
 
-.header-content button  {
-    height: auto;
+.header-propio button  {
+    display: flex;
+    width: 250px;
+    height:min-content;
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     color: #0C5F97;
     background: #E0E0E0 radial-gradient(circle, transparent 1%, #eeeeee 1%) center/15000%;
     padding: 5px;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 700;
     box-shadow: .5rem .5rem 1rem #0C5F97;
     border: 2px solid transparent;
     cursor: pointer;
@@ -126,7 +122,6 @@ body    {
 
 .general    {
     display: flex;
-    justify-content: space-between;
     height: 400px;
     font-size: 25px;
     font-weight: 700;
@@ -136,7 +131,7 @@ body    {
 .general_card   {
     padding: 20px;
     text-align: center;
-    
+    font-size: 30px;
 }
 
 .general_card_titulo{
@@ -165,6 +160,7 @@ body    {
     background-position: center;
     background-size: cover;
 }
+
 /* que puedes obtener de nosotros FIN */
 /* que puedes obtener de nosotros FIN */
 /* que puedes obtener de nosotros FIN */
@@ -175,6 +171,15 @@ body    {
 /* Programas descatados carousel inicio */
 /* Programas descatados carousel inicio */
 /* Programas descatados carousel inicio */
+/* .carousel-item  {
+    height: 100vh;
+    min-height: 300xp;
+}
+
+.carouse-caption    {
+    bottom: 220px;
+    z-index: 2;
+} */
 
 .c-altura{
     height: 600px;
@@ -237,8 +242,12 @@ body    {
 }
 
 .info_titulo{
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
     font-weight: 700;
+    font-size: 40px;
 }
 
 /* Que podemos ofrecerte Fin */
@@ -247,13 +256,58 @@ body    {
 
 /* ----------------------------------------------------------------------- */
 
+/* Compra de productos inicio */
+/* Compra de productos inicio */
+/* Compra de productos inicio */
+
+.productos_destacados   {
+    background-color: #E0E0E0;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+.productos {
+    background-color: #0C5F97;
+    margin-bottom: 140px;
+}
+
+.producto_card  {
+    background-color: #E0E0E0;
+    border: #2b2b2b 2px solid;
+    height: 300px;
+    width: 300px;
+}
+
+.producto_card_imagen   {
+    padding: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.producto_card_precio    {
+    width: 120px;
+}
+
+
+/* Compra de productos fin */
+/* Compra de productos fin */
+/* Compra de productos fin */
+
+
+/* ----------------------------------------------------------/*
+
 /* Formulario de contacto inicio */
 /* Formulario de contacto inicio */
 /* Formulario de contacto inicio */
 .contacto {
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(../assets/img/header2.png);
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(../assets/img/header2.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -387,3 +441,23 @@ form button:hover,.links a:hover {
 /* formulario de contacto fin */
 /* formulario de contacto fin */
 /* formulario de contacto fin */
+
+/* media para formulario de contacto */
+
+@media screen and (max-width:600px) {
+    .contacto {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        text-align: center;
+        align-items: center;    
+    }
+    .box-info {
+        gap:15px;
+        align-items: center;
+    }
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+}

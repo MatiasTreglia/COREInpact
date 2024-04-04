@@ -23,8 +23,8 @@
 <body>
     <header>
         <!-- BS navbar inicia -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-propio">
+            <div class="container">
                 <a class="navbar-brand logo" href="#">CORE<span>Impact</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
@@ -54,167 +54,186 @@
         <!-- BS navbar fin -->
 
         <!-- ---------------------------------------------------------------------------------- -->
-
         <!-- header Inicio -->
-        <div class="header-content">
-            <div class="header-txt">
-                <h1>Transforma tu vida</h1>
-                <h2>
-                    Empieza tu viaje hacia una vida más saludable con nuestros planes de
-                    entrenamiento adaptados para ti.<br />Resultados garantizados,
-                    bienestar duradero.<br />¡Comienza la mejor versión de ti!
-                </h2>
+        <div class="header-propio justify-content-center align-items-center d-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 header-txt">
+                        <h1>Transforma tu vida</h1>
+                        <p>Empieza tu viaje hacia una vida más saludable con nuestros planes de
+                            entrenamiento adaptados para ti.<br />Resultados garantizados,
+                            bienestar duradero.<br />¡Comienza la mejor versión de ti!</p>
+                    </div>
+                    <div class="col-12 col-md-6 header-txt pb-5 justify-content-star align-items-center d-flex">
+                        <button class="uneteahora efecto" type="submit">¡ÚNETE AHORA!</button>
+                    </div>
+                </div>
             </div>
-            <button class="uneteahora efecto" type="submit">¡ÚNETE AHORA!</button>
         </div>
     </header>
 
+
+
     <!-- sección para información general de la pagina -->
-    <section class="section_general">
+    <section>
         <h2 class="general_titulo">QUE PUEDES OBTENER DE NOSOTROS</h2>
-        <!-- información sobre lo que se puede obtener en la pagina web -->
-        <div class="general">
-            <div class="general_card general_img1">
-                <h2 class="general_card_titulo">ENTRENAMIENTOS PRESENCIALES</h2>
-                <p class="general_card_texto">
-                    Experimenta la motivación en persona. Únete a nosotros para
-                    entrenamientos presenciales y alcanza tus metas fitness con el apoyo
-                    directo de nuestros entrenadores expertos
-                </p>
+        <div class="row altura">
+            <div class="col-md-4 general_img1">
+                <div class="general_card">
+                    <h2 class="general_card_titulo">ENTRENAMIENTOS PRESENCIALES</h2>
+                    <p class="general_card_texto">
+                        Experimenta la motivación en persona. Únete a nosotros para
+                        entrenamientos presenciales y alcanza tus metas fitness con el apoyo
+                        directo de nuestros entrenadores expertos
+                    </p>
+                </div>
             </div>
-            <div class="general_card general_img2">
-                <h2 class="general_card_titulo">PLANES VIRTUALES</h2>
-                <p class="general_card_texto">
-                    Conéctate desde cualquier lugar. Nuestros planes de entrenamientos
-                    virtuales te brindan flexibilidad sin comprometer la calidad.
-                    Alcanza tus objetivos fitness con comodidad
-                </p>
+            <div class="col-md-4 general_img2">
+                <div class="general_card">
+                    <h2 class="general_card_titulo">PLANES VIRTUALES</h2>
+                    <p class="general_card_texto">
+                        Conéctate desde cualquier lugar. Nuestros planes de entrenamientos
+                        virtuales te brindan flexibilidad sin comprometer la calidad.
+                        Alcanza tus objetivos fitness con comodidad
+                    </p>
+                </div>
             </div>
-            <div class="general_card general_img3">
-                <h2 class="general_card_titulo">INFORMACIÓN DE ÚLTIMO MOMENTO</h2>
-                <p class="general_card_texto">
-                    Mantente actualizado al instante. Accede a nuestra información de
-                    último momento y descubre consejos, trucos y noticias relacionadas
-                    con el mundo del fitness para llevar tu rendimiento al siguiente
-                    nivel
-                </p>
+            <div class="col-md-4 general_img3">
+                <div class="general_card">
+                    <h2 class="general_card_titulo">INFORMACIÓN DE ÚLTIMO MOMENTO</h2>
+                    <p class="general_card_texto">
+                        Mantente actualizado al instante. Accede a nuestra información de
+                        último momento y descubre consejos, trucos y noticias relacionadas
+                        con el mundo del fitness para llevar tu rendimiento al siguiente
+                        nivel
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <!-- header fin -->
 
     <!-- ---------------------------------------------------------------------------------- -->
-    
-
-
-
-
-
-
 
     <!-- main para la venta de planes de entrenamiento -->
     <main class="contenidoprincipal">
-      <h2 class="programa_destacado">PROGRAMAS DESTACADOS</h2>
-      <!-- BS carousel -->
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <!-- botones para el carousel -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <!-- Funcionamiento del carousel -->
-        <div class="carousel-inner">
-          <!-- entrenamiento de fuerza -->
-          <div class="carousel-item active c-altura">
-            <!-- <img src="./assets/img/header2.jpg" class="d-block w-100" alt="..."> -->
-            <div class="carousel-caption top-0 mt-1 d-none d-md-block">
-              <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE FUERZA</h3>
-              <div class="programa mt-5">
-                <div class="programa_card">
-                    <h4 class="programa_card_titulo">Volumen 1</h4>
-                    <a href="#">
-                    <img class="programa_card_imagen" src="./assets/img/fuerza1.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="programa_card">
-                    <h4 class="programa_card_titulo">Volumen 2</h4>
-                    <a href="#">
-                    <img class="programa_card_imagen" src="./assets/img/fuerza2.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="programa_card">
-                    <h4 class="programa_card_titulo">Volumen 3</h4>
-                    <a href="#">
-                    <img class="programa_card_imagen" src="./assets/img/fuerza3.jpg" alt="" />
-                    </a>
-                </div>
+        <h2 class="programa_destacado">PROGRAMAS DESTACADOS</h2>
+        <!-- BS carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <!-- botones para el carousel -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-              <!-- entrenameinto de resistencia -->
-            </div>
-          </div>
-          <div class="carousel-item c-altura">
-            <div class="carousel-caption top-0 mt-1 d-none d-md-block">
-              <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE RESISTENCIA</h3>
-              <div class="programa mt-5">
-                  <div class="programa_card">
-                      <h4 class="programa_card_titulo">Volumen 1</h4>
-                      <img class="programa_card_imagen" src="./assets/img/resistencia1.JPG" alt="" />
-                  </div>
-                  <div class="programa_card">
-                      <h4 class="programa_card_titulo">Volumen 2</h4>
-                      <img class="programa_card_imagen" src="./assets/img/resisntencia2.JPG" alt="" />
-                  </div>
-                  <div class="programa_card">
-                      <h4 class="programa_card_titulo">Volumen 3</h4>
-                      <img class="programa_card_imagen" src="./assets/img/resistencia3.JPG" alt="" />
-                  </div>
-              </div>
-            </div>
-          </div>
-          <!-- entrenamiento de velocidad -->
-          <div class="carousel-item c-altura">
-            <div class="carousel-caption top-0 mt-1 d-none d-md-block">
-              <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE VELOCIDAD</h3>
-              <div class="programa">
-                  <div class="programa_card">
-                      <h4 class="programa_card_titulo">Volumen 1</h4>
-                      <img class="programa_card_imagen" src="./assets/img/velocidad1.JPG" alt="" />
-                  </div>
-                  <div class="programa_card">
-                      <h4 class="programa_card_titulo">Volumen 2</h4>
-                      <img class="programa_card_imagen" src="./assets/img/velocidad2.jpg" alt="" />
-                  </div>
-                  <div class="programa_card">
-                      <h4 class="programa_card_titulo">Volumen 3</h4>
-                      <img class="programa_card_imagen" src="./assets/img/velocidad3.JPG" alt="" />
-                  </div>
-              </div>
+            <!-- Funcionamiento del carousel -->
+            <div class="carousel-inner">
+                <!-- entrenamiento de fuerza -->
+                <div class="carousel-item active c-altura">
+                    <!-- <img src="./assets/img/header2.jpg" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption top-0 mt-1 d-none d-md-block">
+                        <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE FUERZA</h3>
+                        <div class="programa mt-5">
+                            <div class="programa_card">
+                                <h4 class="programa_card_titulo">Volumen 1</h4>
+                                <a href="#">
+                                    <img class="programa_card_imagen" src="./assets/img/fuerza1.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="programa_card">
+                                <h4 class="programa_card_titulo">Volumen 2</h4>
+                                <a href="#">
+                                    <img class="programa_card_imagen" src="./assets/img/fuerza2.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="programa_card">
+                                <h4 class="programa_card_titulo">Volumen 3</h4>
+                                <a href="#">
+                                    <img class="programa_card_imagen" src="./assets/img/fuerza3.jpg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- entrenameinto de resistencia -->
+                    </div>
+                </div>
+                <div class="carousel-item c-altura">
+                    <div class="carousel-caption top-0 mt-1 d-none d-md-block">
+                        <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE RESISTENCIA</h3>
+                        <div class="programa mt-5">
+                            <div class="programa_card">
+                                <h4 class="programa_card_titulo">Volumen 1</h4>
+                                <img class="programa_card_imagen" src="./assets/img/resistencia1.JPG" alt="" />
+                            </div>
+                            <div class="programa_card">
+                                <h4 class="programa_card_titulo">Volumen 2</h4>
+                                <img class="programa_card_imagen" src="./assets/img/resisntencia2.JPG" alt="" />
+                            </div>
+                            <div class="programa_card">
+                                <h4 class="programa_card_titulo">Volumen 3</h4>
+                                <img class="programa_card_imagen" src="./assets/img/resistencia3.JPG" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- entrenamiento de velocidad -->
+                <div class="carousel-item c-altura">
+                    <div class="carousel-caption top-0 mt-1 d-none d-md-block">
+                        <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE VELOCIDAD</h3>
+                        <div class="programa mt-5">
+                            <div class="programa_card">
+                                <h4 class="programa_card_titulo">Volumen 1</h4>
+                                <img class="programa_card_imagen" src="./assets/img/velocidad1.JPG" alt="" />
+                            </div>
+                            <div class="programa_card">
+                                <h4 class="programa_card_titulo">Volumen 2</h4>
+                                <img class="programa_card_imagen" src="./assets/img/velocidad2.jpg" alt="" />
+                            </div>
+                            <div class="programa_card">
+                                <h4 class="programa_card_titulo">Volumen 3</h4>
+                                <img class="programa_card_imagen" src="./assets/img/velocidad3.JPG" alt="" />
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
             </div>
-          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </main>
     <!-- Main fin -->
 
     <!-- ---------------------------------------------------------------------------------- -->
 
     <!-- sección info general de nosotros -->
     <section class="info">
-        <div class="info_content">
-                <h2 class="info_titulo">Que podemos ofrecerte</h2>
-                <p class="info_texto">En CoreImpact, nos enorgullece contar con un equipo diverso de profesionales altamente capacitados y apasionados por el fitness y el bienestar. Nuestra misión es ofrecerte una experiencia integral de entrenamiento que vaya más allá de simplemente ejercitar el cuerpo; nos esforzamos por fortalecer tu mente, cuerpo y espíritu. Nuestros planes de entrenamiento están cuidadosamente diseñados para abordar aspectos clave de tu condición física, incluyendo el fortalecimiento del núcleo, la mejora de la fuerza, la resistencia y la flexibilidad. Ya sea que estés buscando aumentar tu estamos aquí para ayudarte a alcanzar tus objetivos. En CoreImpact, nos comprometemos a proporcionarte las herramientas, el apoyo y la motivación necesarios para superar cualquier obstáculo y alcanzar tu máximo potencial. No importa tu edad, nivel de condición física o experiencia, te damos la bienvenida a unirse a nuestra comunidad y dar el primer paso hacia una vida más saludable y feliz.<br />¡Estamos aquí para ayudarte a hacer un impacto positivo en tu
-                    vida!
-                </p>
-            </div>
+        <div class="info_content container">
+            <h2 class="info_titulo">QUE PODEMOS OFRECERTE</h2>
+            <p class="info_texto">En CoreImpact, nos enorgullece contar con un equipo diverso de profesionales
+                altamente capacitados y apasionados por el fitness y el bienestar. Nuestra misión es ofrecerte una
+                experiencia integral de entrenamiento que vaya más allá de simplemente ejercitar el cuerpo; nos
+                esforzamos por fortalecer tu mente, cuerpo y espíritu. Nuestros planes de entrenamiento están
+                cuidadosamente diseñados para abordar aspectos clave de tu condición física, incluyendo el
+                fortalecimiento del núcleo, la mejora de la fuerza, la resistencia y la flexibilidad. Ya sea que
+                estés buscando aumentar tu estamos aquí para ayudarte a alcanzar tus objetivos. En CoreImpact, nos
+                comprometemos a proporcionarte las herramientas, el apoyo y la motivación necesarios para superar
+                cualquier obstáculo y alcanzar tu máximo potencial. No importa tu edad, nivel de condición física o
+                experiencia, te damos la bienvenida a unirse a nuestra comunidad y dar el primer paso hacia una vida
+                más saludable y feliz.<br />¡Estamos aquí para ayudarte a hacer un impacto positivo en tu
+                vida!
+            </p>
+        </div>
         </div>
     </section>
     <!-- Fin Seccion general -->
@@ -223,36 +242,54 @@
 
     <!-- sección para la compra de productos -->
     <section class="productos">
-        <h2>PRODUCTOS DESTACADOS PARA TU ENTRENAMIENTO</h2>
-        <div class="producto_card">
-            <img class="producto_card_imagen" src="./assets/img/compra1.jpg" alt="" />
-            <p class="producto_card_titulo">Mancuernas de goma</p>
-            <p class="producto_card_precio">$5.333<span>/kg</span></p>
-        </div>
-        <div class="producto_card">
-            <img class="producto_card_imagen" src="./assets/img/compra2.jpg" alt="" />
-            <p class="producto_card_titulo">Foamroller</p>
-            <p class="producto_card_precio">$20.200</p>
-        </div>
-        <div class="producto_card">
-            <img class="producto_card_imagen" src="./assets/img/compra3.jpg" alt="" />
-            <p class="producto_card_titulo">kettlebell</p>
-            <p class="producto_card_precio">$5.333 <span>/kg</span></p>
-        </div>
-        <div class="producto_card">
-            <img class="producto_card_imagen" src="./assets/img/compra4.jpg" alt="" />
-            <p class="producto_card_titulo">Bandas elásticas</p>
-            <p class="producto_card_precio">$2.900</p>
-        </div>
-        <div class="producto_card">
-            <img class="producto_card_imagen" src="./assets/img/compra5.jpg" alt="" />
-            <p class="producto_card_titulo">Pelota de pilates</p>
-            <p class="producto_card_precio">$13.280</p>
-        </div>
-        <div class="producto_card">
-            <img class="producto_card_imagen" src="./assets/img/compra6.jpg" alt="" />
-            <p class="producto_card_titulo">Colchoneta de goma</p>
-            <p class="producto_card_precio">$8.700</p>
+        <h2 class="productos_destacados">PRODUCTOS DESTACADOS PARA TU ENTRENAMIENTO</h2>
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="producto_card shadow-md mb-4 card text-center">
+                        <img class="producto_card_imagen" src="./assets/img/compra1.jpg" alt="" />
+                        <p class="producto_card_titulo">Mancuernas de goma</p>
+                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$7.543</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="producto_card shadow-md mb-4 card text-center">
+                        <img class="producto_card_imagen" src="./assets/img/compra2.jpg" alt="" />
+                        <p class="producto_card_titulo">Foamroller</p>
+                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$20.200</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="producto_card shadow-md mb-4 card text-center">
+                        <img class="producto_card_imagen" src="./assets/img/compra3.jpg" alt="" />
+                        <p class="producto_card_titulo">kettlebell</p>
+                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$5.333</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="producto_card shadow-md mb-4 card text-center">
+                        <img class="producto_card_imagen" src="./assets/img/compra4.jpg" alt="" />
+                        <p class="producto_card_titulo">Bandas</p>
+                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$2.900</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="producto_card shadow-md mb-4 card text-center">
+                        <img class="producto_card_imagen" src="./assets/img/compra5.jpg" alt="" />
+                        <p class="producto_card_titulo">Pelota de pilates</p>
+                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$13.280</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="producto_card shadow-md mb-4 card text-center">
+                        <img class="producto_card_imagen" src="./assets/img/compra6.jpg" alt="" />
+                        <p class="producto_card_titulo">Colchoneta de goma</p>
+                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$8.700</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- seccion de la compra de productos fin -->
@@ -302,7 +339,7 @@
 
     <!-- inicio footer -->
     <footer class="footer">
-        <div class="footer-content container">
+        <div class="footer-content">
             <div class="link-footer">
                 <ul>
                     <h2>ACERCA DE</h2>
