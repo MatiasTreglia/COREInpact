@@ -119,98 +119,178 @@
     <main class="contenidoprincipal">
         <h2 class="programa_destacado">PROGRAMAS DESTACADOS</h2>
         <!-- BS carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <!-- botones para el carousel -->
+
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide d-none d-lg-block">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <!-- Funcionamiento del carousel -->
-            <div class="carousel-inner">
-                <!-- entrenamiento de fuerza -->
-                <div class="carousel-item active c-altura">
-                    <!-- <img src="./assets/img/header2.jpg" class="d-block w-100" alt="..."> -->
-                    <div class="carousel-caption top-0 mt-1 d-none d-md-block">
-                        <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE FUERZA</h3>
-                        <div class="programa mt-5">
-                            <div class="programa_card">
-                                <h4 class="programa_card_titulo">Volumen 1</h4>
-                                <a href="#">
-                                    <img class="programa_card_imagen" src="./assets/img/fuerza1.jpg" alt="" />
-                                </a>
-                            </div>
-                            <div class="programa_card">
-                                <h4 class="programa_card_titulo">Volumen 2</h4>
-                                <a href="#">
-                                    <img class="programa_card_imagen" src="./assets/img/fuerza2.jpg" alt="" />
-                                </a>
-                            </div>
-                            <div class="programa_card">
-                                <h4 class="programa_card_titulo">Volumen 3</h4>
-                                <a href="#">
-                                    <img class="programa_card_imagen" src="./assets/img/fuerza3.jpg" alt="" />
-                                </a>
-                            </div>
+            <div class="carousel-inner bg-colorpropio">
+                <div class="carousel-item active mb-5">
+                    <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE FUERZA</h3>
+                    <div class="programa mt-5">
+                        <div class="programa_card">
+                            <h4 class="programa_card_titulo">Volumen 1</h4>
+                            <a href="#">
+                                <img class="programa_card_imagen" src="./assets/img/fuerza1.jpg" alt="" />
+                            </a>
                         </div>
-                        <!-- entrenameinto de resistencia -->
-                    </div>
-                </div>
-                <div class="carousel-item c-altura">
-                    <div class="carousel-caption top-0 mt-1 d-none d-md-block">
-                        <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE RESISTENCIA</h3>
-                        <div class="programa mt-5">
-                            <div class="programa_card">
-                                <h4 class="programa_card_titulo">Volumen 1</h4>
-                                <img class="programa_card_imagen" src="./assets/img/resistencia1.JPG" alt="" />
-                            </div>
-                            <div class="programa_card">
-                                <h4 class="programa_card_titulo">Volumen 2</h4>
-                                <img class="programa_card_imagen" src="./assets/img/resisntencia2.JPG" alt="" />
-                            </div>
-                            <div class="programa_card">
-                                <h4 class="programa_card_titulo">Volumen 3</h4>
-                                <img class="programa_card_imagen" src="./assets/img/resistencia3.JPG" alt="" />
-                            </div>
+                        <div class="programa_card">
+                            <h4 class="programa_card_titulo">Volumen 2</h4>
+                            <a href="#">
+                                <img class="programa_card_imagen" src="./assets/img/fuerza2.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="programa_card">
+                            <h4 class="programa_card_titulo">Volumen 3</h4>
+                            <a href="#">
+                                <img class="programa_card_imagen" src="./assets/img/fuerza3.jpg" alt="" />
+                            </a>
                         </div>
                     </div>
                 </div>
-                <!-- entrenamiento de velocidad -->
-                <div class="carousel-item c-altura">
-                    <div class="carousel-caption top-0 mt-1 d-none d-md-block">
-                        <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE VELOCIDAD</h3>
-                        <div class="programa mt-5">
-                            <div class="programa_card">
-                                <h4 class="programa_card_titulo">Volumen 1</h4>
-                                <img class="programa_card_imagen" src="./assets/img/velocidad1.JPG" alt="" />
-                            </div>
-                            <div class="programa_card">
-                                <h4 class="programa_card_titulo">Volumen 2</h4>
-                                <img class="programa_card_imagen" src="./assets/img/velocidad2.jpg" alt="" />
-                            </div>
-                            <div class="programa_card">
-                                <h4 class="programa_card_titulo">Volumen 3</h4>
-                                <img class="programa_card_imagen" src="./assets/img/velocidad3.JPG" alt="" />
-                            </div>
+                <div class="carousel-item mb-5">
+                    <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE RESISTENCIA</h3>
+                    <div class="programa mt-5">
+                        <div class="programa_card">
+                            <h4 class="programa_card_titulo">Volumen 1</h4>
+                            <a href="#">
+                            <img class="programa_card_imagen" src="./assets/img/resistencia1.JPG" alt="" />
+                            </a>
                         </div>
-
+                        <div class="programa_card">
+                            <h4 class="programa_card_titulo">Volumen 2</h4>
+                            <a href="#">
+                            <img class="programa_card_imagen" src="./assets/img/resisntencia2.JPG" alt="" />
+                            </a>
+                        </div>
+                        <div class="programa_card">
+                            <h4 class="programa_card_titulo">Volumen 3</h4>
+                            <a href="#"></a>
+                            <img class="programa_card_imagen" src="./assets/img/resistencia3.JPG" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item mb-5">
+                    <h3 class="programa_titulo">PROGRAMAS DE ENTRENAMIENTO DE VELOCIDAD</h3>
+                    <div class="programa mt-5">
+                        <div class="programa_card">
+                            <h4 class="programa_card_titulo">Volumen 1</h4>
+                            <a href="">
+                            <img class="programa_card_imagen" src="./assets/img/velocidad1.JPG" alt="" />
+                            </a>
+                        </div>
+                        <div class="programa_card">
+                            <h4 class="programa_card_titulo">Volumen 2</h4>
+                            <a href="">
+                            <img class="programa_card_imagen" src="./assets/img/velocidad2.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="programa_card">
+                            <h4 class="programa_card_titulo">Volumen 3</h4>
+                            <a href="">
+                            <img class="programa_card_imagen" src="./assets/img/velocidad3.JPG" alt="" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+
+        <div id="carouselExampleIndicatorsSmallScreen" class="carousel slide d-lg-none">
+            <div class="carousel-inner bg-colorpropio">
+                <div class="carousel-item active">
+                    <div class="programa_card">
+                        <a href="#">
+                            <img class="programa_card_imagen" src="./assets/img/fuerza1.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="programa_card">
+                        <a href="#">
+                            <img class="programa_card_imagen" src="./assets/img/fuerza2.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="programa_card">
+                        <a href="#">
+                            <img class="programa_card_imagen" src="./assets/img/fuerza3.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="programa_card">
+                        <a href="#">
+                        <img class="programa_card_imagen" src="./assets/img/resistencia1.JPG" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="programa_card">
+                        <a href="#">
+                        <img class="programa_card_imagen" src="./assets/img/resisntencia2.JPG" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="programa_card">
+                        <a href="#"></a>
+                        <img class="programa_card_imagen" src="./assets/img/resistencia3.JPG" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="programa_card">
+                        <a href="">
+                        <img class="programa_card_imagen" src="./assets/img/velocidad1.JPG" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="programa_card">
+                        <a href="">
+                        <img class="programa_card_imagen" src="./assets/img/velocidad2.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="programa_card">
+                        <a href="">
+                        <img class="programa_card_imagen" src="./assets/img/velocidad3.JPG" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
     </main>
     <!-- Main fin -->
 
@@ -249,21 +329,24 @@
                     <div class="producto_card shadow-md mb-4 card text-center">
                         <img class="producto_card_imagen" src="./assets/img/compra1.jpg" alt="" />
                         <p class="producto_card_titulo">Mancuernas de goma</p>
-                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$7.543</a>
+                        <a href="#"
+                            class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$7.543</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="producto_card shadow-md mb-4 card text-center">
                         <img class="producto_card_imagen" src="./assets/img/compra2.jpg" alt="" />
                         <p class="producto_card_titulo">Foamroller</p>
-                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$20.200</a>
+                        <a href="#"
+                            class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$20.200</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="producto_card shadow-md mb-4 card text-center">
                         <img class="producto_card_imagen" src="./assets/img/compra3.jpg" alt="" />
                         <p class="producto_card_titulo">kettlebell</p>
-                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$5.333</a>
+                        <a href="#"
+                            class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$5.333</a>
                     </div>
                 </div>
             </div>
@@ -272,21 +355,24 @@
                     <div class="producto_card shadow-md mb-4 card text-center">
                         <img class="producto_card_imagen" src="./assets/img/compra4.jpg" alt="" />
                         <p class="producto_card_titulo">Bandas</p>
-                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$2.900</a>
+                        <a href="#"
+                            class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$2.900</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="producto_card shadow-md mb-4 card text-center">
                         <img class="producto_card_imagen" src="./assets/img/compra5.jpg" alt="" />
                         <p class="producto_card_titulo">Pelota de pilates</p>
-                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$13.280</a>
+                        <a href="#"
+                            class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$13.280</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="producto_card shadow-md mb-4 card text-center">
                         <img class="producto_card_imagen" src="./assets/img/compra6.jpg" alt="" />
                         <p class="producto_card_titulo">Colchoneta de goma</p>
-                        <a href="#" class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$8.700</a>
+                        <a href="#"
+                            class="btn btn-primary producto_card_precio justify-content-center align-self-center d-flex">$8.700</a>
                     </div>
                 </div>
             </div>
