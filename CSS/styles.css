@@ -67,7 +67,7 @@ body {
     font-size: 60px;
 }
 
-.header-propio button {
+.uneteahora {
     display: flex;
     width: 250px;
     height: min-content;
@@ -178,6 +178,7 @@ body {
     display: flex;   
     max-width: 80%;
     max-height: 80%;
+    justify-content: center;
 }
 
 .programa_card {
@@ -465,4 +466,33 @@ form button:hover,
     .box-info>h1 {
         font-size: 1.5rem;
     }
+}
+
+/* footer inicio */
+.footer-propio{
+    width: 250px;
+    height: min-content;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    color: #0c5f97;
+    background: #e0e0e0 radial-gradient(circle, transparent 1%, #eeeeee 1%) center/15000%;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0.5rem 0.5rem 1rem #0c5f97;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 1s ease;
+    padding: 5px;
+    margin: 10px;
+}
+/* Footer fin */
+
+/* Inicio de sesión */
+.bg-inicio  {
+    background-color: #0c5f97;
+
+}
+
+.bg-usuario {
+    background-color: #e0e0e0;
 }
