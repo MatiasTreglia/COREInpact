@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Declaracion de variables Inicio */
+$font1: "Poppins", sans-serif;
+$color1: #0c5f97;
+$color2: #e0e0e0;
+$filtro1: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+$font-wigth1: 700;
+$font-size1: 40px;
+$text-shadow-titulo:1px 1px 2px rgba(0, 0, 0, 1);
+$text-shadow-text: 1px 1px 2px rgba(0, 0, 0, 0.6);
+$box-shadow-card:10px 10px 8px 0 rgba(0, 0, 0, 0.8);
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: $font1;
+    color: $color1;
+    text-shadow:$text-shadow-text;
+    background-color: $color2;
+}
+
+.titulo {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    text-shadow:$text-shadow-titulo ;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Header inicio */
+/* Header inicio */
+/* Header inicio */
+/* Header inicio */
+
+/* navbar inicio*/
+
+.navbar {
+    background-color: $color2 ;
+
+    .logo {
+        color: $color1;
+        font-size: 25px;
+        font-weight: 800;
+
+        span {
+            color: black;
+        }
+    }
+
+    .nav-link {
+        font-size: 20px;
+        padding: 0 20px;
+        color: $color1;
+        font-weight: 600;
+    }
+}
+
+.logo:hover {
+    color: $color1;
+}
+
+header nav a span:hover {
+    color: black;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+
+/* contenido header inicio*/
+.header-propio {
+    height: 720px;
+    background-image: url(../assets/img/header2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size:$font-size1 - 10;
+
+    .header-txt {
+        text-shadow: $text-shadow-titulo;
+        font-weight: $font-wigth1;
+        text-align: center;
+
+        h1 {
+            font-size: $font-size1 + 20;
+
+            @media screen and (max-width: 400px) {
+                display: none;
+            }
+        }
+    }
+
+    .uneteahora {
+        width: 250px;
+        height: min-content;
+        font-size: $font-size1 - 10;
+        font-family: "Poppins", sans-serif;
+        color: $color1;
+        background: $color2 radial-gradient(circle, transparent 1%, #eeeeee 1%) center/15000%;
+        padding: 5px;
+        border-radius: 10px;
+        font-weight: $font-wigth1;
+        box-shadow: 0.5rem 0.5rem 1rem $color1;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+
+    .efecto {
+        background-position: center;
+    }
+}
+
+.efecto:hover {
+    box-shadow: -0.5rem -0.5rem 1rem $color1;
+}
+
+.efecto:active {
+    background-color: #1290e4;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+/* contenido header Fin*/
+
+/* Header fin */
+/* Header fin */
+/* Header fin */
+/* Header fin */
+
+/* --------------------------------------------------------------------------------------- */
+
+/* que puedes obtener de nosotros INICIO */
+/* que puedes obtener de nosotros INICIO */
+/* que puedes obtener de nosotros INICIO */
+.general_card {
+    color: $color2;
+    padding: 20px;
+    text-align: center;
+    text-shadow: $text-shadow-titulo;
+
+    .general_card_titulo {
+        font-weight: $font-wigth1;
+        font-size: $font-size1 -10;
+    }
+
+    .general_card_texto {
+        margin-top: 20px;
+        font-weight: $font-wigth1 - 250;
+        font-size: $font-size1 - 15;
+    }
+
+}
+
+@for $i from 1 through 3    {
+    .general_img#{$i}   {
+    background-image: $filtro1, url(../assets/img/blog#{$i}.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+}
+
+/* que puedes obtener de nosotros FIN */
+/* que puedes obtener de nosotros FIN */
+/* que puedes obtener de nosotros FIN */
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Programas descatados carousel inicio */
+/* Programas descatados carousel inicio */
+/* Programas descatados carousel inicio */
+
+.bg-colorpropio {
+    background-color: $color1;
+
+    .programa_titulo {
+        font-size: $font-size1;
+        font-weight: $font-wigth1;
+        color: $color2;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .programa_card {
+        padding: 15px;
+
+        .programa_card_titulo {
+            font-size: $font-size1;
+            font-weight: $font-wigth1;
+            color: $color2;
+            text-align: center;
+
+            @media screen and (max-width: 968px) {
+                font-size: $font-size1 - 10;
+            }
+        }
+
+        .programa_card_imagen {
+            max-width: 100%;
+            max-height: 100%;
+            background-position: center;
+            background-size: cover;
+            border-radius: 2%;
+            box-shadow: $box-shadow-card;
+        }
+    }
+}
+
+
+.programa_card_md {
+    padding: 50px;
+
+    .programa_card_imagen {
+        max-width: 100%;
+        max-height: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 2%;
+        box-shadow: $box-shadow-card;
+
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: $color2;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Programas descatados carousel fin */
+/* Programas descatados carousel fin */
+/* Programas descatados carousel fin */
+
+/* --------------------------------------------------------------------------------------- */
+/* Que podemos ofrecerte inicio */
+/* Que podemos ofrecerte inicio */
+/* Que podemos ofrecerte inicio */
+
+.info_content {
+    text-align: center;
+    font-weight: 700;
+    font-size: $font-size1 - 15;
+
+    .info_texto  {
+        max-width: 1000px;
+
+        @media screen and (max-width: 576px) {
+            font-size: $font-size1 - 20;
+        }
+
+    }
+}
+
+/* Que podemos ofrecerte Fin */
+/* Que podemos ofrecerte Fin */
+/* Que podemos ofrecerte Fin */
+
+/* ----------------------------------------------------------------------- */
+
+/* Compra de productos inicio */
+/* Compra de productos inicio */
+/* Compra de productos inicio */
+
+.titulo {
+    @media screen and (max-width: 370px) {
+        font-size: 30px;
+    } 
+}
+
+.bg-propio-productos {
+    background-color: $color1;
+
+    .shadow-propio  {
+        box-shadow: $box-shadow-card;
+    }
+}
+/* Compra de productos fin */
+/* Compra de productos fin */
+/* Compra de productos fin */
+
+/* ----------------------------------------------------------/*
+
+/* Formulario de contacto inicio */
+/* Formulario de contacto inicio */
+/* Formulario de contacto inicio */
+.contacto {
+    justify-content: center;
+    align-items: center;
+    background-image: $filtro1,url(../assets/img/header2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 20px;
+    gap: 10px;
+
+    .box-info {
+        color: $color2;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .h1 {
+            text-align: left;
+            letter-spacing: 5px;
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            p {
+                font-size: 1rem;
+
+                i {
+                    color: $color1;
+                    margin-right: 10px;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+
+            a {
+                text-decoration: none;
+                width: 40px;
+                height: 40px;
+                background: $color1;
+                text-align: center;
+                transition: 0.1s;
+
+                i {
+                    color: $color2;
+                    line-height: 40px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+
+    .input-box {
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 40px;
+            padding: 0 10px;
+            outline: none;
+            background: rgba(255 255 255 / 0.1);
+            border: 3px solid transparent;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            color: $color2;
+        }
+
+        textarea {
+            width: 100%;
+            height: 130px;
+            padding: 10px;
+            background: rgba(255 255 255 / 0.1);
+            border: 3px solid transparent;
+            letter-spacing: 1px;
+            outline: none;
+            transition: 0.3s;
+            color: $color2  ;
+            letter-spacing: 1.5px;
+            resize: none;
+        }
+
+        i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            color: rgba(255 255 255 / 0.3);
+            transition: 0.3s;
+        }
+    }
+}
+
+
+.input-box>input:focus,
+.input-box>textarea:focus {
+    border-bottom: 3px solid $color1;
+}
+
+.input-box input:focus~i {
+    color: $color1;
+}
+
+form>button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: $color1;
+    color: #fff;
+    border: none;
+    transition: 0.1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover,
+.links a:hover {
+    background: $color1;
+}
+
+/* formulario de contacto fin */
+/* formulario de contacto fin */
+/* formulario de contacto fin */
+/* formulario de contacto fin */
+
+/* media para formulario de contacto */
+
+@media screen and (max-width: 600px) {
+    .contacto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .box-info {
+        gap: 15px;
+        align-items: center;
+    }
+
+    .box-info>h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* footer inicio */
+.footer-propio {
+    width: 250px;
+    height: min-content;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    color: $color1;
+    background: $color2 radial-gradient(circle, transparent 1%, #eeeeee 1%) center/15000%;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0.5rem 0.5rem 1rem $color1;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+/* Footer fin */
+
+/* Inicio de sesión */
+.bg-inicio {
+    background-color: $color1;
+
+}
+
+.bg-usuario {
+    background-color: $color2;
+}
