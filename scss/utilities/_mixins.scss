@@ -1,0 +1,16 @@
+/* @extend efecto boton */
+@mixin boton22 {
+    width: 250px;
+    height: min-content;
+    font-size: $font-size1 - 10;
+    font-family: "Poppins", sans-serif;
+    color: $color1;
+    background: $color2 radial-gradient(circle, transparent 1%, #eeeeee 1%) center/15000%;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: $font-wigth1;
+    box-shadow: 0.5rem 0.5rem 1rem $color1;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 1s ease;
+}

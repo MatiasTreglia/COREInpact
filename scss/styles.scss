@@ -1,32 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* Declaracion de variables Inicio */
-$font1: "Poppins", sans-serif;
-$color1: #0c5f97;
-$color2: #e0e0e0;
-$filtro1: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-$font-wigth1: 700;
-$font-size1: 40px;
-$text-shadow-titulo:1px 1px 2px rgba(0, 0, 0, 1);
-$text-shadow-text: 1px 1px 2px rgba(0, 0, 0, 0.6);
-$box-shadow-card:10px 10px 8px 0 rgba(0, 0, 0, 0.8);
+/* variables del sitio */
+@import "./utilities/variables";
+@import "./utilities/funtions";
+@import "./utilities/mixins";
+@import "./utilities/helpers";
 
-/* @extend efecto boton */
-@mixin boton22{
-    width: 250px;
-    height: min-content;
-    font-size: $font-size1 - 10;
-    font-family: "Poppins", sans-serif;
-    color: $color1;
-    background: $color2 radial-gradient(circle, transparent 1%, #eeeeee 1%) center/15000%;
-    padding: 5px;
-    border-radius: 10px;
-    font-weight: $font-wigth1;
-    box-shadow: 0.5rem 0.5rem 1rem $color1;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all 1s ease;
-}
+/* Bases generales del sitio */
+@import "./base/reset";
+@import "./base/typography.scss";
+@import "./base/base";
+
+/* Layouts del sitio */
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/sidebar";
+@import "./layout/navigation";
 
 * {
     margin: 0;
@@ -39,7 +27,7 @@ $box-shadow-card:10px 10px 8px 0 rgba(0, 0, 0, 0.8);
 body {
     font-family: $font1;
     color: $color1;
-    text-shadow:$text-shadow-text;
+    text-shadow: $text-shadow-text;
     background-color: $color2;
 }
 
@@ -49,7 +37,7 @@ body {
     font-weight: 700;
     font-size: 40px;
     text-align: center;
-    text-shadow:$text-shadow-titulo ;
+    text-shadow: $text-shadow-titulo ;
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -101,7 +89,7 @@ header nav a span:hover {
     background-image: url(../assets/img/header2.jpg);
     background-size: cover;
     background-position: center;
-    font-size:$font-size1 - 10;
+    font-size: $font-size1 - 10;
 
     .header-txt {
         text-shadow: $text-shadow-titulo;
@@ -121,9 +109,10 @@ header nav a span:hover {
         @include boton22;
     }
 
-    .efecto {
-        background-position: center;
-    }
+}
+
+.efecto {
+    background-position: center;
 }
 
 .efecto:hover {
@@ -167,11 +156,12 @@ header nav a span:hover {
 
 }
 
-@for $i from 1 through 3    {
-    .general_img#{$i}   {
-    background-image: $filtro1, url(../assets/img/blog#{$i}.jpg);
-    background-position: center;
-    background-size: cover;
+@for $i from 1 through 3 {
+    .general_img#{$i} {
+        background-image: $filtro1,
+        url(../assets/img/blog#{$i}.jpg);
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -260,7 +250,7 @@ header nav a span:hover {
     font-weight: 700;
     font-size: $font-size1 - 15;
 
-    .info_texto  {
+    .info_texto {
         max-width: 1000px;
 
         @media screen and (max-width: 576px) {
@@ -283,16 +273,17 @@ header nav a span:hover {
 .titulo {
     @media screen and (max-width: 370px) {
         font-size: 30px;
-    } 
+    }
 }
 
 .bg-propio-productos {
     background-color: $color1;
 
-    .shadow-propio  {
+    .shadow-propio {
         box-shadow: $box-shadow-card;
     }
 }
+
 /* Compra de productos fin */
 /* Compra de productos fin */
 /* Compra de productos fin */
@@ -305,10 +296,10 @@ header nav a span:hover {
 .contacto {
     justify-content: center;
     align-items: center;
-    background-image: $filtro1,url(../assets/img/header2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: $filtro1, url(../assets/img/header2.jpg);
     display: grid;
     grid-template-columns: repeat(2, 50%);
     padding: 20px;
@@ -394,7 +385,7 @@ form {
             letter-spacing: 1px;
             outline: none;
             transition: 0.3s;
-            color: $color2  ;
+            color: $color2 ;
             letter-spacing: 1.5px;
             resize: none;
         }
@@ -471,7 +462,13 @@ form button:hover,
 
 /* Footer fin */
 
-/* Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+
 .bg-inicio {
     background-color: $color1;
 
@@ -481,3 +478,118 @@ form button:hover,
     background-color: $color2;
 }
 
+/* Usuario.html Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+/* Usuario.html Inicio de sesión */
+
+
+/* planes.html planes de entrenamiento */
+/* planes.html planes de entrenamiento */
+/* planes.html planes de entrenamiento */
+/* planes.html planes de entrenamiento */
+/* planes.html planes de entrenamiento */
+
+
+
+@for $i2 from 1 through 3 {
+    .planes_img#{$i2} {
+        background-image: $filtro1,
+        url(../assets/img/blog#{$i2}.jpg);
+        background-position: center;
+        background-size: cover;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+
+.card-body {
+    color: #e0e0e0;
+
+    h1{
+        font-size: 2vw;
+
+        @media screen and (max-width: 991px) {
+            font-size: $font-size1 - 10;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 2vw;
+    }
+}
+
+.planes_card_boton {
+    @include boton22;
+}
+
+
+
+/* carousel */
+/* carousel */
+/* carousel */
+
+.bg-header {
+    height: 720px;
+    background-image: url(../assets/img/header2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .programa_card {
+        padding: 15px;
+        max-width: 20rem;
+
+        .programa_card_titulo2 {
+            font-size: $font-size1;
+            font-weight: $font-wigth1;
+            color: $color2;
+            text-align: center;
+
+            @media screen and (max-width: 968px) {
+                font-size: $font-size1 - 10;
+            }
+        }
+
+        .programa_card_imagen {
+            max-width: 100%;
+            max-height: 100%;
+            background-position: center;
+            background-size: cover;
+            border-radius: 2%;
+            box-shadow: $box-shadow-card;
+        }
+    }
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: $color2;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/* planes.html planes de entrenamiento */
+/* planes.html planes de entrenamiento */
+/* planes.html planes de entrenamiento */
+/* planes.html planes de entrenamiento */
+/* planes.html planes de entrenamiento */
+
+
+.bg-header-contacto {
+    height: 920px;
+    background-size: cover;
+    background-position: center;
+    background-image: $filtro1, url(../assets/img/header2.jpg);
+}
+
+.m-contacto{
+    margin-top: 80px;
+}
